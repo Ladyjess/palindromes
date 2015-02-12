@@ -1,12 +1,13 @@
 require 'palindromes'
 require 'rspec'
+require 'pry'
 
 describe "String#palindrome?" do
-  it "compares the word to itself forwards and backwards to see if its a palindrome" do
-    expect("hannah".palindrome?("hannah")).to eq true
+  it "accepts the word to check and pushes it in to an array" do
+    expect("hannah".palindrome?).to eq true
   end
 
-  it 'compares word and returns false if not palindrome' do
-    expect("won".palindrome?("happy")).to eq false
+  it 'Checks to see if forwards array and backwards array are same' do
+    expect("mary".palindrome?).to eq false
   end
 end
